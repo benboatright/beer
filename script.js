@@ -1,7 +1,7 @@
-// initialize array to store beers
+// initialize array to store vacation
 let myLibrary=[];
 
-// function to create beer object
+// function to create vacation object
 function vacation(name, state, geography, rating) {
   this.name = name
   this.state = state
@@ -9,12 +9,12 @@ function vacation(name, state, geography, rating) {
   this.rating = rating
 }
 
-//function to add beer
+//function to add vacation
 function addVacationToLibrary(vacation) {
   myLibrary.push(vacation)
 }
 
-//add a couple beers to the array before rendering
+//add a couple vacations to the array before rendering
 const kureBeach = new vacation('Kure Beach','VA','Beach','5 Stars')
 addVacationToLibrary(kureBeach)
 const newYork = new vacation('New York City', 'NY', 'Urban','4 Stars')
