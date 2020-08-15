@@ -59,7 +59,7 @@ function addData(){
   let new_rating = document.getElementById('rating').value;
 
   let vaca = new vacation(new_name,new_state,new_geography,new_rating);
-  myLibrary.push(brew);
+  myLibrary.push(vaca);
 
   var div = document.createElement('Div')
   div.setAttribute("id","card")
