@@ -2,21 +2,20 @@
 <html>
 
 <head>
-  <title>Beer Library</title>
+  <title>US Vacation Library</title>
   <link href="style.css" type="text/css"
   href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-  <header id="headerMain">Beer Library</header>
+  <header id="headerMain">US Vacation Library</header>
 
   <div id="container">
     <div id="content">
-      <div id="form"> <label for="name">Name</label> <br>
+      <div id="form">
+           <label for="name">City/Region</label> <br>
            <input type="Text" id="name" name="name"> <br> <br>
-           <label for="brewery">Brewery</label> <br>
-           <input type="Text" id="brewery" name="brewery"> <br> <br>
            <label for="state">State</label>
            <select name="state" id="state">
              <option value="AL">AL</option>
@@ -72,16 +71,14 @@
              <option value="WI">WI</option>
              <option value="WY">WY</option>
            </select> <br> <br>
-           <label for="type">Type</label> <br>
-           <select name="type" id="type"> <br>
-             <option value="Ale">Ale</option>
-             <option value="DIPA">DIPA</option>
-             <option value="Gose">Gose</option>
-             <option value="IPA">IPA</option>
-             <option value="Lager">Lager</option>
-             <option value="Pilsner">Pilsner</option>
-             <option value="Saison">Saison</option>
-             <option value="Stout">Stout</option>
+           <label for="geography">Geography</label> <br>
+           <select name="geography" id="geography"> <br>
+             <option value="Beach">Beach</option>
+             <option value="Desert">Desert</option>
+             <option value="Forest">Forest</option>
+             <option value="Lake">Lake</option>
+             <option value="Mountains">Mountains</option>
+             <option value="Urban">Urban</option>
            </select> <br> <br>
            <label for="rating">Rating</label> <br>
            <select name="rating" id="rating"> <br>
@@ -96,7 +93,7 @@
              <option value="5star">5 Stars</option>
            </select> <br>
            <br>
-           <button id="addButton" onclick="addData(),clearInputs()">Add Beer</button>
+           <button id="addButton" onclick="addData(),clearInputs()">Add Destination</button>
          </div>
 
        </div>
