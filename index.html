@@ -11,13 +11,14 @@
 <body>
   <header id="headerMain">Beer Library</header>
 
-  <div id="content">
-    <div id="form"> <label for="name">Name of Beer</label> <br>
-           <input type="Text" id="name" name="name"> <br>
+  <div id="container">
+    <div id="content">
+      <div id="form"> <label for="name">Name</label> <br>
+           <input type="Text" id="name" name="name"> <br> <br>
            <label for="brewery">Brewery</label> <br>
-           <input type="Text" id="brewery" name="brewery"> <br>
-           <label for="state">State</label> <br>
-           <select name="state" id="state"> <br>
+           <input type="Text" id="brewery" name="brewery"> <br> <br>
+           <label for="state">State</label>
+           <select name="state" id="state">
              <option value="AL">AL</option>
              <option value="AK">AK</option>
              <option value="AS">AS</option>
@@ -70,8 +71,8 @@
              <option value="WV">WV</option>
              <option value="WI">WI</option>
              <option value="WY">WY</option>
-           </select> <br>
-           <label for="type">Beer Type</label> <br>
+           </select> <br> <br>
+           <label for="type">Type</label> <br>
            <select name="type" id="type"> <br>
              <option value="Ale">Ale</option>
              <option value="DIPA">DIPA</option>
@@ -81,7 +82,7 @@
              <option value="Pilsner">Pilsner</option>
              <option value="Saison">Saison</option>
              <option value="Stout">Stout</option>
-           </select> <br>
+           </select> <br> <br>
            <label for="rating">Rating</label> <br>
            <select name="rating" id="rating"> <br>
              <option value="1star">1 Stars</option>
@@ -96,12 +97,10 @@
            </select> <br>
            <br>
            <button id="addButton" onclick="addData(),clearInputs()">Add Beer</button>
-    </div>
+         </div>
 
-    <div id="container">
-
-   </div>
-    <p id="result"></p> <script src="script.js"></script>
+       </div>
+     </p> <script src="script.js"></script>
   </div>
 
   <footer id="footerMain"></footer>

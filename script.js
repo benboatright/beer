@@ -15,18 +15,14 @@ function addBeerToLibrary(beer) {
   myLibrary.push(beer)
 }
 
-//add one beer
+//add a couple beers to the array before rendering
 const quantumHop = new beer('Quantum Hop','Basic City','VA','DIPA','5 Stars')
 addBeerToLibrary(quantumHop)
+const hopDrone = new beer('Hop Drone', 'Pro Re Nata', 'VA', 'IPA','4 Stars')
+addBeerToLibrary(hopDrone)
+const iKnow = new beer('I Know, I Know', 'New Anthem', 'NC', 'IPA','4.5 Stars')
+addBeerToLibrary(iKnow)
 
-//render the library as list
-// function render(myLibrary){
-//   for (i= 0; i < myLibrary.length; i++ ){
-//     var para = document.createElement('P')
-//     para.innerText = Object.values(myLibrary[i])
-//     document.getElementById("result").appendChild(para)
-//   }
-// }
 
 //render the library as card
 function renderCard(myLibrary){
@@ -41,7 +37,7 @@ function renderCard(myLibrary){
     var button = document.createElement('BUTTON')
     button.setAttribute("id","deleteButton")
 
-    p1.innerText = 'Beer Name: ' + myLibrary[i].name
+    p1.innerText = 'Name: ' + myLibrary[i].name
     p2.innerText = 'Brewery: ' + myLibrary[i].brewery
     p3.innerText = 'State: ' + myLibrary[i].state
     p4.innerText = 'Type: ' + myLibrary[i].type
@@ -69,10 +65,6 @@ function addData(){
   let brew = new beer(new_name,new_brewery,new_state,new_type,new_rating);
   myLibrary.push(brew);
 
-  // var para = document.createElement('P')
-  // para.innerText = Object.values(myLibrary[myLibrary.length - 1])
-  // document.getElementById("result").appendChild(para)
-
   var div = document.createElement('Div')
   div.setAttribute("id","card")
   var p1 = document.createElement('P')
@@ -83,7 +75,7 @@ function addData(){
   var button = document.createElement('BUTTON')
   button.setAttribute("id","deleteButton")
 
-  p1.innerText = 'Beer Name: ' + myLibrary[myLibrary.length -1].name
+  p1.innerText = 'Name: ' + myLibrary[myLibrary.length -1].name
   p2.innerText = 'Brewery: ' + myLibrary[myLibrary.length -1].brewery
   p3.innerText = 'State: ' + myLibrary[myLibrary.length -1].state
   p4.innerText = 'Type: ' + myLibrary[myLibrary.length -1].type
@@ -109,7 +101,3 @@ function clearInputs(){
   document.getElementById('type').value='';
   document.getElementById('rating').value='';
 }
-
-
-// const quantumHop = new beer('Quantum Hop','Basic City','VA','DIPA','5')
-// addBreweryToLibrary(quantumHop)

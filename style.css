@@ -13,14 +13,8 @@ body{
   grid-template-rows: auto 1fr auto;
   margin:0;
   min-height: 100%;
-  background:#0B5345;
+  background:#212F3C;
 }
-
-/* form{
-  border-style: solid;
-  width: 200px;
-  padding: 5px;
-} */
 
 #headerMain{
   display: grid;
@@ -30,34 +24,35 @@ body{
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
-  border-bottom-style: solid;
+  background:#34495E;
 }
 
 #container{
   display:flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 input{
-  background-color: #0E6655;
+  background-color: #34495E;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  height: 20px;
+  height: 18px;
   width: 150px;
   border-radius: 5px;
 }
 
 select{
-  background-color: #0E6655;
+  background-color: #34495E;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  height: 20px;
-  width: 150px;
+  height: 18px;
+  width: 160px;
   border-radius: 5px;
 }
 
@@ -65,21 +60,36 @@ select{
   margin: 10px;
 }
 
-#card{
+#content > #form {
+  margin: 10px;
+}
+
+#form{
   border-style: solid;
   border-radius: 20px;
-  background-color: #0E6655;
+  background-color: #34495E;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   width: 200px;
-  height: 250px
-  margin: 10px;
+  height: 320px;
   padding: 10px;
+  border-color: #212F3C;
+}
+
+#card{
+  border-style: solid;
+  border-radius: 20px;
+  background-color: #34495E;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  width: 200px;
+  height: 320px;
+  padding: 10px;
+  border-color: #212F3C;
 }
 
 #content{
   grid-area: content;
-  padding: 10px;
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
@@ -93,6 +103,7 @@ select{
   height: 30px;
   width: 60px;
   border-radius: 10px;
+  border-color: #DF6244;
 }
 
 #addButton{
@@ -104,11 +115,11 @@ select{
   height: 30px;
   width: 80px;
   border-radius: 10px;
+  border-color: #52D07F;
 }
 
 #footerMain{
   grid-area: footer;
-  background: #4A4C4E;
   padding: 1rem;
   color:white;
 }
