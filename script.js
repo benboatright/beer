@@ -40,7 +40,7 @@ function renderCard(myLibrary){
     p3.innerText = 'Geography: ' + myLibrary[i].geography
     p4.innerText = 'Rating: ' + myLibrary[i].rating
     button.innerHTML = 'Delete'
-    button.addEventListener("click",function(){div.remove()})
+    button.addEventListener("click",function(){this.parentNode.remove()})
 
     div.appendChild(p1).appendChild(p2).appendChild(p3).appendChild(p4)
     div.append(button)
@@ -75,7 +75,7 @@ function addData(){
   p3.innerText = 'Geography: ' + myLibrary[myLibrary.length -1].geography
   p4.innerText = 'Rating: ' + myLibrary[myLibrary.length -1].rating
   button.innerHTML = 'Delete'
-  button.addEventListener("click",function(){div.remove()})
+  button.addEventListener("click",function(){this.parentNode.remove()})
 
   div.appendChild(p1)
   div.appendChild(p2)
