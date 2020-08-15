@@ -13,7 +13,7 @@ body{
   grid-template-rows: auto 1fr auto;
   margin:0;
   min-height: 100%;
-  background:#035441;
+  background:#0B5345;
 }
 
 /* form{
@@ -28,8 +28,9 @@ body{
   padding: 1rem;
   color: white;
   justify-content: center;
-  font-family: 'Lobster', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 50px;
+  border-bottom-style: solid;
 }
 
 #container{
@@ -43,7 +44,7 @@ body{
 input{
   background-color: #0E6655;
   color: white;
-  font-family: Arial;
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   height: 20px;
   width: 150px;
@@ -53,7 +54,7 @@ input{
 select{
   background-color: #0E6655;
   color: white;
-  font-family: Arial;
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   height: 20px;
   width: 150px;
@@ -68,6 +69,7 @@ select{
   border-style: solid;
   border-radius: 20px;
   background-color: #0E6655;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   width: 200px;
   height: 250px
@@ -77,8 +79,9 @@ select{
 
 #content{
   grid-area: content;
-  padding: 1rem;
+  padding: 10px;
   color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #deleteButton{
